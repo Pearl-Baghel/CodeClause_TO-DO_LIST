@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, yellow , orange);
+    background: linear-gradient(135deg, rgb(191, 233, 5) , orange);
     padding: 10px;
 }
 .TO-DO-List{
@@ -29,4 +29,62 @@
 .TO-DO-List h2 img{
     width: 30px;
     margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(230, 222, 213);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+button{
+    border: none ;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(255, 139, 6);
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 40px;
+     
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: grey;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
 }
