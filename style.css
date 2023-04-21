@@ -4,3 +4,29 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, yellow , orange);
+    padding: 10px;
+}
+.TO-DO-List{
+    width: 100%;
+    max-width: 540px;
+    background: wheat;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+.TO-DO-List h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.TO-DO-List h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
